@@ -90,7 +90,7 @@ The model has no dependencies. To read the chain yourself, run `npm install` in 
 
 We want to hear from validators, collators, RPC providers, engineers, KSM holders and anyone else with an interest in how this turns out. Open an issue or a pull request, with a source if you have one. Disagreement is what this is for.
 
-**Please don't post costs in an issue,** yours or another operator's, and nothing about what you plan to charge. Answers go to the survey, which has its own rules for handling them.
+**Please don't post costs in an issue,** yours or another operator's, and nothing about what you plan to charge. Answers go to the survey, as a signed pull request into `answers/` or a private message, under its own rules.
 
 Giving input makes nobody a member of anything, earns nothing and commits nobody to any work. Nothing here is a treasury request.
 

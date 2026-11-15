@@ -42,9 +42,24 @@ The cost lines match [Appendix B of the JAM Prime proposal paper](https://github
 24. What should we have asked?
 
 ## Your answers
+There are two ways to answer. Public and signed is better, because anyone can check it.
+
+**Public: a pull request.**
+1. Copy [`answers/TEMPLATE.md`](answers/TEMPLATE.md) to `answers/<your-name>.md` and fill it in.
+2. Take its SHA-256 hash, for example `sha256sum answers/<your-name>.md`.
+3. Sign that hash with your stash, or with an account whose on-chain identity names your validators. In [Polkadot.js Apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-rpc.publicnode.com#/signing) that is Developer, then Sign and verify.
+4. Put the account and the signature in `answers/<your-name>.sig`, one per line, and open a pull request with both files.
+
+Anyone can then hash the file again and check the signature in the same tool. We merge a pull request once the signature checks out and the account is linked to a Kusama seat. A file you publish this way is public as soon as you open the pull request, so the five-operator rule below does not cover it.
+
+**Private: a forum message.**
 - Send your answers as a private message to [@birdbrain](https://forum.polkadot.network/u/birdbrain) on the Polkadot forum, and say whether they are **named** or **aggregate only**.
 - Named answers can come straight away. Aggregate-only answers wait until two people outside Birdbrain and Decent hold them, so we cannot read them alone. If you want to answer that way, tell us and we will come back to you when they can.
 - Only figures from at least five operators are published. Smaller groups are merged or left out.
+
+When we publish, we say how many answers were public and signed and how many were private.
+
+**For everyone**
 - We ask for actual past costs. Please do not tell us what you plan to charge, or anything about another operator.
-- You can withdraw until the results are published, and afterwards from any named listing.
+- You can withdraw until the results are published, and afterwards from any named listing. A merged pull request stays in the repository's history, so we can take your file out of the totals but cannot erase it.
 - Taking part makes nobody a member of anything and earns nothing.
