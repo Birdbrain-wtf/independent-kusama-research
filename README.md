@@ -44,7 +44,7 @@ JAM Prime has gaps too. [Its US$4.32m](https://github.com/sdfinst/publications/b
 | [`engineering.md`](engineering.md) | The jobs, what others have stated for each, and the tests that would replace those with a Kusama figure |
 | [`budget-table.csv`](budget-table.csv) | The comparison to fill in, mostly empty so far |
 | [`operating-models.csv`](operating-models.csv) | Separate fleets, metanodes, consolidation and native services side by side |
-| [`survey-v1.md`](survey-v1.md) | Draft validator cost survey. It takes no answers yet |
+| [`survey-v1.md`](survey-v1.md) | Validator cost survey |
 | [`data/`](data/) | Chain, price, commit, parachain and operator reads from 4, 5 and 13 November 2026 |
 
 Where a claim has no public source, the file says "none found". Tell us if you can do better.
@@ -90,7 +90,7 @@ The model has no dependencies. To read the chain yourself, run `npm install` in 
 
 We want to hear from validators, collators, RPC providers, engineers, KSM holders and anyone else with an interest in how this turns out. Open an issue or a pull request, with a source if you have one. Disagreement is what this is for.
 
-**Please don't post costs in an issue,** yours or another operator's, and nothing about what you plan to charge. The survey isn't open, and it has its own rules for handling answers.
+**Please don't post costs in an issue,** yours or another operator's, and nothing about what you plan to charge. Answers go to the survey, which has its own rules for handling them.
 
 Giving input makes nobody a member of anything, earns nothing and commits nobody to any work. Nothing here is a treasury request.
 

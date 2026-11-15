@@ -1,9 +1,7 @@
 # Validator cost survey, version 1
 
-**Draft for correction. It takes no answers yet, so please don't send costs. Tell us what is wrong with it before it opens.**
-
 ## Who is asking
-Birdbrain runs this with Decent Partners, and the answers feed a costing Decent is doing. Birdbrain proposed [#676](https://kusama.subsquare.io/referenda/676). Seat cost matters on every route, JAM Prime included. Decent's interests are listed in the [first post of the #676 thread](https://forum.polkadot.network/t/19047).
+Birdbrain runs this survey. Birdbrain also proposed [#676](https://kusama.subsquare.io/referenda/676), one of the routes compared here, so we are not neutral. Seat cost matters on every route, JAM Prime included. Our interests are listed in the [first post of the #676 thread](https://forum.polkadot.network/t/19047).
 
 Use what you actually spent over the last three months, in US dollars, for one Kusama seat. If you run several seats, give the average a seat, and put costs the whole operation carries however many seats it runs in question 12. An unpaid hour counts too, so tell us the hours.
 
@@ -42,7 +40,8 @@ The cost lines match [Appendix B of the JAM Prime proposal paper](https://github
 24. What should we have asked?
 
 ## Your answers
-- You choose **named** or **aggregate only**. Named answers can come straight away. Aggregate-only answers wait until two people outside Birdbrain and Decent hold them, so we cannot read them alone.
+- Send your answers as a private message to [@birdbrain](https://forum.polkadot.network/u/birdbrain) on the Polkadot forum, and say whether they are **named** or **aggregate only**.
+- Named answers can come straight away. Aggregate-only answers wait until two people outside Birdbrain and Decent hold them, so we cannot read them alone. If you want to answer that way, tell us and we will come back to you when they can.
 - Only figures from at least five operators are published. Smaller groups are merged or left out.
 - We ask for actual past costs. Please do not tell us what you plan to charge, or anything about another operator.
 - You can withdraw until the results are published, and afterwards from any named listing.
