@@ -1,0 +1,10 @@
+{
+  "read": "2026-11-05",
+  "source": "system_chain, system_properties and state_getRuntimeVersion RPC calls to wss://kreivo.kippu.rocks",
+  "chain": "Kreivo",
+  "paraId": 2281,
+  "tokenSymbol": "KSM",
+  "tokenDecimals": 12,
+  "ss58Format": 2,
+  "specVersion": 136
+}

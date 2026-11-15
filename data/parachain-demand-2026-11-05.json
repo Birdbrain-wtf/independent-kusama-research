@@ -1,0 +1,682 @@
+{
+ "read": "2026-11-05",
+ "what": "Every chain holding a Kusama core today, with what it carried and what it paid. Measurements, except KSM price conversions anywhere else in this repo, which are assumptions",
+ "sources": {
+  "cores_now": "Broker.Workload on Kusama Coretime, read 2026-11-05",
+  "shares": "https://hambro.ch/kusama/set-reductions/coretime/ (2026-10-25, last 28 days from 2026-09-28)",
+  "token_market_caps": "CoinGecko, read 2026-11-05. Basilisk quote last updated 2026-06-01. BNC is shared with Bifrost on Polkadot. cACU, QTZ and AMPE: no usable quote",
+  "counts": "scripts/parachain-count.mjs and scripts/parachain-count-raw.mjs",
+  "renewals": "scripts/coretime-sale.mjs"
+ },
+ "transaction_definition": "Every extrinsic except unsigned timestamp, parachainSystem, authorInherent, parachainInherent, randomness and session inherents. Basilisk has no decoded breakdown: every one of its blocks held exactly 2 unsigned extrinsics and no signed ones",
+ "limits": [
+  "One day, Wednesday 4 November 2026 UTC. Encointer activity clusters around its ceremonies, so one day can miss it",
+  "A transaction count says nothing about value moved or state held",
+  "Kreivo: one day misleads badly here. See data/kreivo-history-2026-11-05.json"
+ ],
+ "current_sale": {
+  "region_begin": 452088,
+  "region_end": 457128,
+  "cores_offered": 132,
+  "cores_sold": 22,
+  "end_price_ksm": 1.0,
+  "runtime_floor": "MinimumEndPrice = 1 KSM, https://github.com/polkadot-fellows/runtimes/blob/main/system-parachains/coretime/coretime-kusama/src/coretime.rs",
+  "sum_next_renewal_prices_ksm": 28.39,
+  "paid_range_ksm": [
+   22,
+   28.39
+  ],
+  "note": "Paid per core is at least the 1 KSM floor and at most its recorded renewal price. Region is 28 days, 13 a year"
+ },
+ "reserved_system_cores": {
+  "asset_hub": 3,
+  "encointer": 1,
+  "bridge_hub": 1,
+  "people": 1,
+  "coretime": 1,
+  "note": "Set by governance, not bought"
+ },
+ "on_demand_2026": {
+  "buyer": "Kreivo only",
+  "orders": 34584,
+  "spend_ksm": 172.92,
+  "source": "https://hambro.ch/kusama/set-reductions/coretime/"
+ },
+ "produced_earlier_in_2026_little_or_nothing_in_last_28_days": [
+  {
+   "paraId": 2023,
+   "name": "Moonriver",
+   "token": "MOVR",
+   "share_2026": "2.1%",
+   "share_last_28_days": "-",
+   "last_finalised_block_read": "2026-08-10T08:27:36Z"
+  },
+  {
+   "paraId": 2048,
+   "name": "Robonomics",
+   "token": "XRT",
+   "share_2026": "2.5%",
+   "share_last_28_days": "0.1%",
+   "last_finalised_block_read": "2026-09-28T19:48:12Z"
+  },
+  {
+   "paraId": 2092,
+   "name": "Kintsugi",
+   "token": "KINT",
+   "share_2026": "1.9%",
+   "share_last_28_days": "-"
+  },
+  {
+   "paraId": 2012,
+   "name": "Crust Shadow",
+   "token": "CSM",
+   "share_2026": "1.7%",
+   "share_last_28_days": "-"
+  },
+  {
+   "paraId": 2241,
+   "name": "Krest",
+   "token": "KREST",
+   "share_2026": "1.7%",
+   "share_last_28_days": "-"
+  },
+  {
+   "paraId": 2222,
+   "name": "DAO IPCI",
+   "token": "MITO",
+   "share_2026": "1.1%",
+   "share_last_28_days": "-"
+  },
+  {
+   "paraId": 2113,
+   "name": "Kabocha",
+   "token": "KAB",
+   "share_2026": "1.1%",
+   "share_last_28_days": "-",
+   "last_finalised_block_read": "2026-10-29T14:00:24Z",
+   "next_renewal_price_ksm": 1.0
+  },
+  {
+   "paraId": 2088,
+   "name": "Altair",
+   "token": "AIR",
+   "share_2026": "0.6%",
+   "share_last_28_days": "-"
+  },
+  {
+   "paraId": 2105,
+   "name": "Darwinia Crab",
+   "token": "CRAB",
+   "share_2026": "0.2%",
+   "share_last_28_days": "-"
+  },
+  {
+   "paraId": 2124,
+   "name": "Amplitude",
+   "token": "AMPE",
+   "share_2026": "0.7%",
+   "share_last_28_days": "-",
+   "still_holds_a_core": true
+  },
+  {
+   "paraId": 2095,
+   "name": "Quartz",
+   "token": "QTZ",
+   "share_2026": "0.3%",
+   "share_last_28_days": "-",
+   "still_holds_a_core": true
+  }
+ ],
+ "chains": [
+  {
+   "paraId": 1000,
+   "name": "Asset Hub",
+   "token": "KSM",
+   "kind": "system",
+   "cores_now": 3,
+   "share_all_time": "4.1%",
+   "share_2026": "7.8%",
+   "share_last_28_days": "12.0%",
+   "count": {
+    "rpc": "wss://asset-hub-kusama-rpc.n.dwellir.com",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 23373488,
+    "last_block": 23414766,
+    "blocks": 41279,
+    "read": 41279,
+    "failed": 0,
+    "extrinsics": 84498,
+    "signed": 1870,
+    "distinct_signers": 276,
+    "transactions": 1940,
+    "top_calls": [
+     [
+      "utility.forceBatch",
+      763
+     ],
+     [
+      "staking.payoutStakers",
+      285
+     ],
+     [
+      "staking.pruneEraStep",
+      132
+     ],
+     [
+      "multiBlockElectionSigned.submitPage",
+      128
+     ],
+     [
+      "balances.transferAllowDeath",
+      87
+     ],
+     [
+      "utility.batchAll",
+      80
+     ],
+     [
+      "revive.ethTransact",
+      70
+     ],
+     [
+      "utility.batch",
+      67
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 1001,
+   "name": "Encointer",
+   "token": "KSM",
+   "kind": "system",
+   "cores_now": 1,
+   "share_all_time": "2.8%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "count": {
+    "rpc": "wss://encointer-kusama-rpc.n.dwellir.com",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 15483283,
+    "last_block": 15494905,
+    "blocks": 11623,
+    "read": 11613,
+    "failed": 10,
+    "extrinsics": 23227,
+    "signed": 1,
+    "distinct_signers": 1,
+    "transactions": 1,
+    "top_calls": [
+     [
+      "polkadotXcm.transferAssetsUsingTypeAndThen",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 1002,
+   "name": "Bridge Hub",
+   "token": "KSM",
+   "kind": "system",
+   "cores_now": 1,
+   "share_all_time": "2.2%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "count": {
+    "rpc": "wss://bridge-hub-kusama-rpc.n.dwellir.com",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 9391864,
+    "last_block": 9398394,
+    "blocks": 6531,
+    "read": 6531,
+    "failed": 0,
+    "extrinsics": 16742,
+    "signed": 3680,
+    "distinct_signers": 1,
+    "transactions": 3680,
+    "top_calls": [
+     [
+      "bridgePolkadotGrandpa.submitFinalityProofEx",
+      1937
+     ],
+     [
+      "bridgePolkadotParachains.submitParachainHeads",
+      1742
+     ],
+     [
+      "bridgePolkadotMessages.receiveMessagesDeliveryProof",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 1004,
+   "name": "People",
+   "token": "KSM",
+   "kind": "system",
+   "cores_now": 1,
+   "share_all_time": "1.4%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "count": {
+    "rpc": "wss://people-kusama-rpc.n.dwellir.com",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 11415547,
+    "last_block": 11429194,
+    "blocks": 13648,
+    "read": 13648,
+    "failed": 0,
+    "extrinsics": 27299,
+    "signed": 3,
+    "distinct_signers": 2,
+    "transactions": 3,
+    "top_calls": [
+     [
+      "identity.setIdentity",
+      1
+     ],
+     [
+      "identity.requestJudgement",
+      1
+     ],
+     [
+      "proxy.proxy",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 1005,
+   "name": "Coretime",
+   "token": "KSM",
+   "kind": "system",
+   "cores_now": 1,
+   "share_all_time": "1.5%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "count": {
+    "rpc": "wss://coretime-kusama-rpc.n.dwellir.com",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 6339971,
+    "last_block": 6346930,
+    "blocks": 6960,
+    "read": 6960,
+    "failed": 0,
+    "extrinsics": 13924,
+    "signed": 4,
+    "distinct_signers": 2,
+    "transactions": 4,
+    "top_calls": [
+     [
+      "proxy.removeProxy",
+      1
+     ],
+     [
+      "balances.transferKeepAlive",
+      1
+     ],
+     [
+      "proxy.addProxy",
+      1
+     ],
+     [
+      "proxy.proxy",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 2281,
+   "name": "Kreivo",
+   "token": "KSM",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "6.9%",
+   "share_2026": "25.1%",
+   "share_last_28_days": "4.0%",
+   "next_renewal_prices_ksm": [
+    1.03
+   ],
+   "count": {
+    "rpc": "wss://kreivo.kippu.rocks",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 40482598,
+    "last_block": 40524474,
+    "blocks": 41877,
+    "read": 41877,
+    "failed": 0,
+    "extrinsics": 83768,
+    "signed": 14,
+    "distinct_signers": 1,
+    "transactions": 14,
+    "top_calls": [
+     [
+      "contracts.call",
+      14
+     ]
+    ],
+    "method": "Raw bytes, then events, since the standard decoder misreads this chain's transactions"
+   }
+  },
+  {
+   "paraId": 2000,
+   "name": "Karura",
+   "token": "KAR",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "3.1%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "next_renewal_prices_ksm": [
+    1.605
+   ],
+   "token_market_cap_usd": 1091810,
+   "token_quote_last_updated": "2026-11-04",
+   "count": {
+    "rpc": "wss://karura-rpc.n.dwellir.com",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 12784097,
+    "last_block": 12791122,
+    "blocks": 7026,
+    "read": 7026,
+    "failed": 0,
+    "extrinsics": 14566,
+    "signed": 514,
+    "distinct_signers": 14,
+    "transactions": 514,
+    "top_calls": [
+     [
+      "acalaOracle.feedValues",
+      473
+     ],
+     [
+      "stableAsset.swap",
+      9
+     ],
+     [
+      "aggregatedDex.swapWithExactSupply",
+      9
+     ],
+     [
+      "dex.swapWithExactSupply",
+      5
+     ],
+     [
+      "multisig.asMulti",
+      4
+     ],
+     [
+      "incentives.claimRewards",
+      3
+     ],
+     [
+      "xTokens.transfer",
+      3
+     ],
+     [
+      "homa.requestRedeem",
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 2001,
+   "name": "Bifrost",
+   "token": "BNC",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "3.1%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "next_renewal_prices_ksm": [
+    1.605
+   ],
+   "token_market_cap_usd": 353411,
+   "token_quote_last_updated": "2026-11-05",
+   "count": {
+    "note": "This node keeps only recent blocks, so this is every block it still held, not 24 hours",
+    "window_start": "2026-11-05T14:51:54.000Z",
+    "window_end": "2026-11-05T15:18:36.000Z",
+    "hours": 0.445,
+    "rpc": "wss://bifrost-rpc.liebi.com/ws",
+    "blocks": 260,
+    "transactions": 2,
+    "signed": 2,
+    "distinct_signers": 1,
+    "top_calls": [
+     [
+      "stablePool.redeemProportion",
+      1
+     ],
+     [
+      "utility.batchAll",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 2007,
+   "name": "Shiden",
+   "token": "SDN",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "3.1%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "next_renewal_prices_ksm": [
+    1.605
+   ],
+   "token_market_cap_usd": 471269,
+   "token_quote_last_updated": "2026-11-05",
+   "count": {
+    "rpc": "wss://shiden-rpc.n.dwellir.com",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 16697995,
+    "last_block": 16708366,
+    "blocks": 10372,
+    "read": 10372,
+    "failed": 0,
+    "extrinsics": 20750,
+    "signed": 6,
+    "distinct_signers": 4,
+    "transactions": 6,
+    "top_calls": [
+     [
+      "balances.transferAllowDeath",
+      3
+     ],
+     [
+      "multisig.approveAsMulti",
+      1
+     ],
+     [
+      "dappStaking.claimStakerRewards",
+      1
+     ],
+     [
+      "utility.batchAll",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 2090,
+   "name": "Basilisk",
+   "token": "BSX",
+   "kind": "parachain",
+   "cores_now": 3,
+   "share_all_time": "3.4%",
+   "share_2026": "5.5%",
+   "share_last_28_days": "12.0%",
+   "next_renewal_prices_ksm": [
+    1.061,
+    1.061,
+    1.061
+   ],
+   "token_market_cap_usd": 251239,
+   "token_quote_last_updated": "2026-06-01",
+   "count": {
+    "rpc": "wss://rpc.basilisk.cloud",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 19355322,
+    "last_block": 19387864,
+    "blocks": 32543,
+    "read": 32543,
+    "failed": 0,
+    "extrinsics": 65086,
+    "signed": 0,
+    "distinct_signers": 0,
+    "transactions": 0,
+    "non_signed_extrinsics_per_block": {
+     "2": 32543
+    }
+   }
+  },
+  {
+   "paraId": 2095,
+   "name": "Quartz",
+   "token": "QTZ",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "2.4%",
+   "share_2026": "0.3%",
+   "share_last_28_days": "-",
+   "next_renewal_prices_ksm": [
+    1.605
+   ],
+   "count": {
+    "note": "Listed public endpoints did not connect on 5 November 2026, so not counted"
+   }
+  },
+  {
+   "paraId": 2124,
+   "name": "Amplitude",
+   "token": "AMPE",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "2.0%",
+   "share_2026": "0.7%",
+   "share_last_28_days": "-",
+   "next_renewal_prices_ksm": [
+    1.605
+   ],
+   "count": {
+    "note": "Listed public endpoints did not connect on 5 November 2026, so not counted"
+   }
+  },
+  {
+   "paraId": 2239,
+   "name": "Acurast Canary",
+   "token": "cACU",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "1.9%",
+   "share_2026": "2.8%",
+   "share_last_28_days": "4.0%",
+   "next_renewal_prices_ksm": [
+    1.605
+   ],
+   "count": {
+    "note": "This node keeps only recent blocks, so this is every block it still held, not 24 hours",
+    "window_start": "2026-11-05T15:01:18.000Z",
+    "window_end": "2026-11-05T15:18:24.000Z",
+    "hours": 0.285,
+    "rpc": "wss://public-rpc.canary.acurast.com",
+    "blocks": 166,
+    "transactions": 306,
+    "signed": 306,
+    "distinct_signers": 301,
+    "top_calls": [
+     [
+      "acurastProcessorManager.heartbeatWithMetrics",
+      248
+     ],
+     [
+      "acurastProcessorManager.heartbeatWithVersion",
+      57
+     ],
+     [
+      "acurastMarketplace.report",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "paraId": 3339,
+   "name": "Curio",
+   "token": "CGT",
+   "kind": "parachain",
+   "cores_now": 1,
+   "share_all_time": "1.6%",
+   "share_2026": "2.7%",
+   "share_last_28_days": "3.9%",
+   "next_renewal_prices_ksm": [
+    1.605
+   ],
+   "token_market_cap_usd": 100447,
+   "token_quote_last_updated": "2026-11-05",
+   "count": {
+    "rpc": "wss://parachain.curioinvest.com/",
+    "window_start": "2026-11-04T00:00:00.000Z",
+    "window_end": "2026-11-05T00:00:00.000Z",
+    "first_block": 5658981,
+    "last_block": 5666004,
+    "blocks": 7024,
+    "read": 7024,
+    "failed": 0,
+    "extrinsics": 14048,
+    "signed": 0,
+    "distinct_signers": 0,
+    "transactions": 0,
+    "top_calls": []
+   }
+  },
+  {
+   "paraId": 3392,
+   "name": "YAP test para",
+   "token": null,
+   "kind": "test",
+   "cores_now": 10,
+   "share_all_time": "4.3%",
+   "share_2026": "22.8%",
+   "share_last_28_days": "36.1%",
+   "next_renewal_prices_ksm": [
+    1.194,
+    1.194,
+    1.194,
+    1.194,
+    1.194,
+    1.194,
+    1.194,
+    1.194,
+    1.194,
+    1.194
+   ],
+   "count": {
+    "note": "No public endpoint listed, not counted. Hambrock marks it a test parachain"
+   }
+  }
+ ],
+ "other_market_caps_usd": {
+  "KSM": 62108598,
+  "MOVR": 12475917,
+  "source": "CoinGecko, read 2026-11-05"
+ }
+}

@@ -1,0 +1,13 @@
+line,A_8_cores,A_32_cores,B_8_cores,B_32_cores,C_signposted,jam_prime_8_cores,term_and_basis,state
+Term compared,5 years,5 years,5 years,5 years,not priced until a design has a sponsor,5 years,Same term on every side,fixed
+Operating seats,to be measured,to be measured,to be measured,to be measured,not priced until a design has a sponsor,included in reference,"The JAM Prime benchmark gives US$0.864m a year at 8 cores and US$3.456m at 32, on any architecture. Unverified: assumes US$3,000 a seat and 3 validators a core",benchmark only
+Merges and later splits,not applicable,not applicable,not applicable,not applicable,not priced until a design has a sponsor,not stated,"Own line because a design for shape C would carry it. JAM Prime's 6, 4 and 2 core options would also need consolidation",open
+Build one-off,not priced,not priced,not priced,not priced,not priced until a design has a sponsor,not priced,The JAM Prime proposal paper puts protocol development outside its benchmark,open
+Maintenance recurring,not priced,not priced,not priced,not priced,not priced until a design has a sponsor,not priced,Fellowship mandate is subject to acceptance,open
+Security capital,to be modelled,to be modelled,to be modelled,to be modelled,not priced until a design has a sponsor,to be modelled,The JAM Prime proposal paper puts return on bonded capital outside its benchmark,open
+Audit,not priced,not priced,not priced,not priced,not priced until a design has a sponsor,not priced,Quotes needed,open
+Renewal after the term,not applicable,not applicable,not applicable,not applicable,not priced until a design has a sponsor,not priced,No price stated,open
+Headline reference,none,none,none,none,not priced until a design has a sponsor,US$4.32m,"Negotiating reference, not accepted by DOT DAO. Fits its DOT ceiling only while DOT's 90-day average is at least US$0.864",reference only
+Block building and node services,to be measured,to be measured,to be measured,to be measured,not priced until a design has a sponsor,not stated,"54 collator slots today, plus RPC. Outside the seat benchmark on every side",open
+Reaching other networks,to be scoped,to be scoped,to be scoped,to be scoped,not priced until a design has a sponsor,not stated,"Items B7 and B8 in work-breakdown.csv. Paid by Polkadot or by users today, and no route is assumed on any side",open
+Inputs behind every figure,see assumptions.csv,see assumptions.csv,see assumptions.csv,see assumptions.csv,not priced until a design has a sponsor,see assumptions.csv,"Each input is labelled external, lever, limit or measure. A figure counts as final only when a quote or measurement replaces its assumption. Dollar figures state their KSM price",rule

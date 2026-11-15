@@ -1,0 +1,33 @@
+{
+  "network": "kusama",
+  "read_at": "2026-11-04T16:03:41.553Z",
+  "asset_hub_block": 23401032,
+  "era_read": 10233,
+  "assumptions": {
+    "usd_per_token": 3.49,
+    "eras_per_year": 1460
+  },
+  "seats": 700,
+  "seats_with_points": 675,
+  "commission": {
+    "p10": 0.15,
+    "median": 0.2,
+    "p90": 0.5,
+    "points_weighted": 0.2906,
+    "seats_at_100pct": 61
+  },
+  "reward_per_era": 912.79,
+  "operator_incentive_per_era": 0,
+  "reward_per_year": 1332678,
+  "supply": 19093759,
+  "staking_issuance_share_of_supply": 0.0698,
+  "staked": 8558783,
+  "usd": {
+    "all_staking_pay_per_seat_month": 554,
+    "operator_share_per_seat_month_at_median_commission": 111,
+    "commission_pot_per_year": 1351551,
+    "operator_income_per_seat_month_average": 161,
+    "staked_value": 29870154,
+    "cost_to_control_a_third_of_stake": 9956718
+  }
+}

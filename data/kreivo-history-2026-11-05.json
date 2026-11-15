@@ -1,0 +1,217 @@
+{
+ "read": "2026-11-05",
+ "what": "Kreivo's transactions over time, from raw blocks on an archive node. Measurements from a sample, so monthly estimates are rough: treat any month with few sampled blocks with transactions as an order of magnitude",
+ "method": "scripts/kreivo-history.mjs. Every 1,000th block to April 2026, every 2,000th after. A block has a transaction if it holds more than its 2 inherents. estimated_tx is the sample count multiplied by the step",
+ "months": [
+  {
+   "month": "2024-08",
+   "blocks_sampled": 151,
+   "sampled_blocks_with_tx": 1,
+   "tx_in_sample": 1,
+   "estimated_tx": 1000,
+   "share_of_blocks_with_tx": "0.66%"
+  },
+  {
+   "month": "2024-09",
+   "blocks_sampled": 163,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2024-10",
+   "blocks_sampled": 123,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2024-11",
+   "blocks_sampled": 81,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2024-12",
+   "blocks_sampled": 66,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-01",
+   "blocks_sampled": 75,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-02",
+   "blocks_sampled": 248,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-03",
+   "blocks_sampled": 231,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-08",
+   "blocks_sampled": 9,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-09",
+   "blocks_sampled": 21,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-10",
+   "blocks_sampled": 409,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-11",
+   "blocks_sampled": 1714,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2025-12",
+   "blocks_sampled": 3628,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  },
+  {
+   "month": "2026-01",
+   "blocks_sampled": 4643,
+   "sampled_blocks_with_tx": 1,
+   "tx_in_sample": 1,
+   "estimated_tx": 1000,
+   "share_of_blocks_with_tx": "0.02%"
+  },
+  {
+   "month": "2026-02",
+   "blocks_sampled": 3671,
+   "sampled_blocks_with_tx": 10,
+   "tx_in_sample": 12,
+   "estimated_tx": 12000,
+   "share_of_blocks_with_tx": "0.27%"
+  },
+  {
+   "month": "2026-03",
+   "blocks_sampled": 3641,
+   "sampled_blocks_with_tx": 3,
+   "tx_in_sample": 3,
+   "estimated_tx": 3000,
+   "share_of_blocks_with_tx": "0.08%"
+  },
+  {
+   "month": "2026-04",
+   "blocks_sampled": 223,
+   "sampled_blocks_with_tx": 4,
+   "tx_in_sample": 4,
+   "estimated_tx": 8000,
+   "share_of_blocks_with_tx": "1.79%"
+  },
+  {
+   "month": "2026-05",
+   "blocks_sampled": 1919,
+   "sampled_blocks_with_tx": 20,
+   "tx_in_sample": 24,
+   "estimated_tx": 48000,
+   "share_of_blocks_with_tx": "1.04%"
+  },
+  {
+   "month": "2026-06",
+   "blocks_sampled": 1897,
+   "sampled_blocks_with_tx": 23,
+   "tx_in_sample": 23,
+   "estimated_tx": 46000,
+   "share_of_blocks_with_tx": "1.21%"
+  },
+  {
+   "month": "2026-07",
+   "blocks_sampled": 2050,
+   "sampled_blocks_with_tx": 79,
+   "tx_in_sample": 109,
+   "estimated_tx": 218000,
+   "share_of_blocks_with_tx": "3.85%"
+  },
+  {
+   "month": "2026-08",
+   "blocks_sampled": 2058,
+   "sampled_blocks_with_tx": 19,
+   "tx_in_sample": 24,
+   "estimated_tx": 48000,
+   "share_of_blocks_with_tx": "0.92%"
+  },
+  {
+   "month": "2026-09",
+   "blocks_sampled": 1511,
+   "sampled_blocks_with_tx": 1,
+   "tx_in_sample": 1,
+   "estimated_tx": 2000,
+   "share_of_blocks_with_tx": "0.07%"
+  },
+  {
+   "month": "2026-10",
+   "blocks_sampled": 643,
+   "sampled_blocks_with_tx": 1,
+   "tx_in_sample": 1,
+   "estimated_tx": 2000,
+   "share_of_blocks_with_tx": "0.16%"
+  },
+  {
+   "month": "2026-11",
+   "blocks_sampled": 97,
+   "sampled_blocks_with_tx": 0,
+   "tx_in_sample": 0,
+   "estimated_tx": 0,
+   "share_of_blocks_with_tx": "0.00%"
+  }
+ ],
+ "full_days": {
+  "2026-11-03": {
+   "blocks": 41878,
+   "transactions": 469,
+   "note": "461 batches between 20:18 and 21:07 UTC, each 250 proxied transfers of 0.001 KSM to GmjkNTkz8umDqhg8Zx1UU3rRrvbEaFF7kz3hKbkVvjnLF1W, signed by Ghs8itgNtedFKmGxUuK63i6jZ2PHfkb8H4FDo5n1ay4419x. In the three decoded, 223, 249 and 250 accounts closed. The rest include the hourly contract calls"
+  },
+  "2026-11-04": {
+   "blocks": 41877,
+   "transactions": 14,
+   "note": "All calls to contract Da1uhU5rnKTXtQxZDvkqDsEeS2SUaNBktAxvMa8CTKDjrdk from ECCLBcqeZChofZupHN9BwL1VaPQxVacHsQtXHGS6EaJkjpP, about hourly"
+  }
+ },
+ "decoded_sample": "Six blocks from May to August 2026, all signed by H1MFTMYzJvVzJ8h8exbBiAD71GDgWHMskT8tVbE5RmazUnr through a proxy: pure proxies created by GmjkNTkz8umDqhg8Zx1UU3rRrvbEaFF7kz3hKbkVvjnLF1W, small KSM transfers, and in one block a transfer of asset 50000002 from Asset Hub",
+ "limits": [
+  "Six decoded blocks show a pattern, not the whole of the traffic",
+  "A transaction count says nothing about value moved",
+  "Use that doesn't touch the chain doesn't appear"
+ ]
+}

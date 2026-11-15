@@ -1,0 +1,30 @@
+{
+  "network": "kusama",
+  "read_at": "2026-11-13T13:41:21.532Z",
+  "era_read": 10269,
+  "method": "Seats grouped by identity parent on the People chain. Seats with no identity count as one operator each, so this undercounts grouping: an operator using unlinked accounts looks like several.",
+  "seats": 700,
+  "operators": 558,
+  "seats_per_operator_mean": 1.25,
+  "single_seat_operators": 521,
+  "seats_by_operator_size": {
+    "one": 521,
+    "two_to_five": 72,
+    "six_to_ten": 22,
+    "over_ten": 85
+  },
+  "largest_operators_seats": [
+    17,
+    17,
+    15,
+    12,
+    12,
+    12,
+    10,
+    6,
+    6,
+    4
+  ],
+  "operators_with_identity": 118,
+  "seats_with_no_identity": 440
+}

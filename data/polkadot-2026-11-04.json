@@ -1,0 +1,33 @@
+{
+  "network": "polkadot",
+  "read_at": "2026-11-04T16:03:48.263Z",
+  "asset_hub_block": 22703856,
+  "era_read": 2343,
+  "assumptions": {
+    "usd_per_token": 0.970502,
+    "eras_per_year": 365
+  },
+  "seats": 600,
+  "seats_with_points": 599,
+  "commission": {
+    "p10": 0,
+    "median": 0,
+    "p90": 0,
+    "points_weighted": 0,
+    "seats_at_100pct": 0
+  },
+  "reward_per_era": 69215.64,
+  "operator_incentive_per_era": 34598.21,
+  "reward_per_year": 25263707,
+  "supply": 1710559677,
+  "staking_issuance_share_of_supply": 0.0148,
+  "staked": 921746110,
+  "usd": {
+    "all_staking_pay_per_seat_month": 3405,
+    "operator_share_per_seat_month_at_median_commission": 0,
+    "commission_pot_per_year": 0,
+    "operator_income_per_seat_month_average": 1702,
+    "staked_value": 894556443,
+    "cost_to_control_a_third_of_stake": 298185481
+  }
+}

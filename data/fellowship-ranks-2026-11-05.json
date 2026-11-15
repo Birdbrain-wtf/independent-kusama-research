@@ -1,0 +1,27 @@
+{
+  "source": "https://collectives-api.subsquare.io/fellowship/members",
+  "read": "2026-11-05",
+  "members": 98,
+  "by_rank": {
+    "0": 36,
+    "1": 12,
+    "2": 18,
+    "3": 24,
+    "4": 5,
+    "5": 1,
+    "6": 1,
+    "7": 1
+  },
+  "active_salary_usd_a_year": {
+    "1": 10000,
+    "2": 20000,
+    "3": 80000,
+    "4": 120000,
+    "5": 160000,
+    "6": 200000,
+    "7": 200000
+  },
+  "rates_source": "https://polkadot.subsquare.io/referenda/1931",
+  "ceiling_if_all_active_usd_a_year": 3560000,
+  "note": "A ceiling only. The list does not show who is active, and rank 0 has no salary."
+}

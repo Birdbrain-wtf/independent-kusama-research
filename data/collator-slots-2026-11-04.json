@@ -1,0 +1,13 @@
+{
+  "read": "2026-11-04",
+  "source": "CollatorSelection.Invulnerables, CollatorSelection.CandidateList and Session.Validators on each chain's public RPC",
+  "note": "Slots, not operators. One operator may hold slots on several chains.",
+  "chains": {
+    "asset_hub": { "invulnerables": 10, "candidates": 3, "session": 13 },
+    "bridge_hub": { "invulnerables": 10, "candidates": 4, "session": 14 },
+    "people": { "invulnerables": 10, "candidates": 2, "session": 12 },
+    "coretime": { "invulnerables": 6, "candidates": 2, "session": 8 },
+    "encointer": { "invulnerables": 4, "candidates": 3, "session": 7 }
+  },
+  "total_session_slots": 54
+}

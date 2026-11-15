@@ -1,0 +1,27 @@
+{
+  "network": "kusama",
+  "read_at": "2026-11-05T16:47:20.160Z",
+  "era_read": 10233,
+  "points_from": "this one era; pay is the mean of the eight eras ending here",
+  "assumptions": {
+    "usd_per_token": 3.49,
+    "eras_per_year": 1460
+  },
+  "usd_per_seat_month": {
+    "commission_mean": 161,
+    "commission_median": 115,
+    "commission_p10": 45,
+    "commission_p90": 305,
+    "reward_on_validator_own_stake_mean": 1.32
+  },
+  "seats_at_100pct": {
+    "seats": 61,
+    "share_of_all_commission": 0.3303,
+    "commission_mean": 610
+  },
+  "other_seats": {
+    "seats": 639,
+    "commission_mean": 118,
+    "commission_median": 105
+  }
+}
