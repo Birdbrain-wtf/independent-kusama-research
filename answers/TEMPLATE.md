@@ -67,7 +67,7 @@ Validator cost survey, version 1. Fill in what you can and leave the rest blank.
 21. Which would you run alongside your validator: Asset Hub, People, Coretime, Bridge Hub, Encointer or Kreivo collators, collators for any other chain we haven't named, or RPC? What monthly payment would you need for that set?
    - 
 
-22. If Kusama consolidated its infrastructure onto fewer chains to fit demand, would you run their collators and RPC with your validator?
+22. If Kusama consolidated its infrastructure onto fewer chains to fit demand and/or utility, would you run their collators and RPC with your validator?
    - 
 
 23. If Kusama kept far fewer than today's 700 seats, would you stay in the running?

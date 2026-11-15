@@ -28,7 +28,7 @@ Set reductions and chain merges answer the same question at different layers. A 
 | --- | --- | --- | --- |
 | **A. Carry everything** | Five system chains as they are: Asset Hub, Bridge Hub, People, Coretime, Encointer | Validators, plus separately funded collators and RPC | Costed at 8 and 32 cores |
 | **B. Metanode** | Five system chains as they are | Validators also collate and serve | Costed at 8 and 32 cores |
-| **C. Consolidate, then scale** | Signposted, not designed: consolidate infrastructure to fit demand, then scale up and out | Open | Follows demand |
+| **C. Consolidate, then scale** | Signposted, not designed: consolidate infrastructure to fit demand and/or utility, then scale up and out | Open | Follows demand and/or utility |
 | **Reference: JAM Prime** | Five chains at 8 cores. "Reduced or consolidated" below 7. Other parachains, Kreivo included, get initial footprint and no guaranteed cores | Polkadot's validators. Collators not stated | 8 cores |
 
 Native JAM services (shape D in [`operating-models.csv`](operating-models.csv)) stay on watch and are not costed. No Kusama design exists to price.
@@ -99,7 +99,7 @@ It is one day. Encointer's activity clusters around its ceremonies, a day can mi
 
 ## C is signposted, not specified
 
-C marks one strategic route: consolidate infrastructure to fit demand, then scale up and out. We are not proposing a design for it here, so it has no chain list, no size and no price.
+C marks one strategic route: consolidate infrastructure to fit demand and/or utility, then scale up and out. We are not proposing a design for it here, so it has no chain list, no size and no price.
 
 A and B get costed now. C joins them only when someone proposes a design with a named sponsor. Until then it has no price, so it can't be compared with anything.
 

@@ -37,7 +37,7 @@ The cost lines match [Appendix B of the JAM Prime proposal paper](https://github
 19. At what yearly hardware outlay would you stop?
 20. Do you run collators or public RPC on Kusama today? What does each cost you a month?
 21. Which would you run alongside your validator: Asset Hub, People, Coretime, Bridge Hub, Encointer or Kreivo collators, collators for any other chain we haven't named, or RPC? What monthly payment would you need for that set?
-22. If Kusama consolidated its infrastructure onto fewer chains to fit demand, would you run their collators and RPC with your validator?
+22. If Kusama consolidated its infrastructure onto fewer chains to fit demand and/or utility, would you run their collators and RPC with your validator?
 23. If Kusama kept far fewer than today's 700 seats, would you stay in the running?
 24. What should we have asked?
 
