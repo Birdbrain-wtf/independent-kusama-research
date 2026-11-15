@@ -1,6 +1,6 @@
 # Validator cost survey, version 1
 
-**Deadline: 23:59 UTC on Monday 16 November 2026.** Voting on [#676](https://kusama.subsquare.io/referenda/676) closes at about 23:30 UTC on Tuesday 17 November, and we want to publish what comes in before then. Answers after the deadline are still welcome and will go into the next version.
+**Deadline: 23:59 UTC on Monday 16 November 2026.** Voting on [#676](https://kusama.subsquare.io/referenda/676) closes at about 23:30 UTC on Tuesday 17 November, and we want to publish what comes in before then. Answers after the deadline are still welcome.
 
 ## Who is asking
 Birdbrain runs this survey. Birdbrain also proposed [#676](https://kusama.subsquare.io/referenda/676), one of the routes compared here, so we are not neutral. Seat cost matters on every route, JAM Prime included. Our interests are listed in the [first post of the #676 thread](https://forum.polkadot.network/t/19047).
