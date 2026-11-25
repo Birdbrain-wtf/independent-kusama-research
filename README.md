@@ -4,13 +4,24 @@ This work coordinates input from interested parties to reach a publicly auditabl
 
 ## The question
 
-Kusama's holders have to decide where the network goes as Polkadot moves to [JAM](https://wiki.polkadot.com/learn/learn-jam-chain/). In August 2025 they passed [#573](https://kusama.subsquare.io/referenda/573), which asks for an independent Kusama on a small JAM network of its own. In 2026 the [JAM Prime proposal](https://github.com/sdfinst/publications/blob/a445bba7ab5a801e3b85168551dfa8b1e5021bc2/content/articles/proposal-kusama-future-jam-prime/index.md) offered another route: Kusama buys capacity on Polkadot's JAM network and retires its own validators. [#671](https://kusama.subsquare.io/referenda/671) to [#674](https://kusama.subsquare.io/referenda/674) put four versions of that to a vote, and all four were rejected on 3 November 2026. [#676](https://kusama.subsquare.io/referenda/676), which asks for the independent route to be scoped, priced and compared with JAM Prime, was still being decided on 5 November.
+Kusama's holders have to decide where the network goes as Polkadot moves to [JAM](https://wiki.polkadot.com/learn/learn-jam-chain/). In August 2025 they passed [#573](https://kusama.subsquare.io/referenda/573), which asks for an independent Kusama on a small JAM network of its own. In 2026 the [JAM Prime proposal](https://github.com/sdfinst/publications/blob/a445bba7ab5a801e3b85168551dfa8b1e5021bc2/content/articles/proposal-kusama-future-jam-prime/index.md) offered another route: Kusama buys capacity on Polkadot's JAM network and retires its own validators. [#671](https://kusama.subsquare.io/referenda/671) to [#674](https://kusama.subsquare.io/referenda/674) put four versions of that to a vote, and all four were rejected on 3 November 2026. [#676](https://kusama.subsquare.io/referenda/676), which asked for the independent route to be scoped, priced and compared with JAM Prime, was rejected on 18 November. The work goes on here, because the question is still open whichever way holders lean.
 
 Nobody has priced the independent route, and JAM Prime's price leaves out important costs. These files are an attempt to put both in one table.
 
+## One plan, not separate threads
+
+Kusama's future has been worked on in separate places: validator pay and the size of the set, the runtime and who maintains it, the system chains and their collators, the treasury and its bounties, and the story the network tells about itself. Each has mostly been argued on its own, by different people in different threads. An independent Kusama only works if they fit, so this repo puts them in one place and in one order:
+
+1. **What the network is for.** The narrative, and who funds work towards it.
+2. **What it has to run.** The spec: which chains and services, at what size.
+3. **Who keeps it running.** Validators, collators, RPC, and the engineers who keep the runtime current.
+4. **What that costs and how it's paid.** Issuance, outside revenue, and a KSM price nobody here sets.
+
+A change at one step moves every step after it. A fund that backs projects needing coretime changes the spec, a smaller spec changes the engineering bill, and the bill sets how much issuance is needed. JAM Prime has the same links: its payment comes from the Kusama Vision fund, so what Kusama funds and how it pays for capacity are decided from one place there too.
+
 ## The narrative
 
-Shape and cost depend on what the network is for, so there's a story to settle before there's a bill. Kusama Vision is [relaunching as the Cypherpunk Vision Fund](https://forum.polkadot.network/t/19053), and we use that as the working narrative without assuming it works. Polkadot and Kusama have carried many before it: Web3, Wood and Buterin, the multi-chain case for engineers, Edgeware's hedge for ETH holders, "Expect Chaos". [`narratives.md`](narratives.md) sorts them by kind and scale, sets out what each changes in the bill and asks for your version.
+Shape and cost depend on what the network is for, so there's a story to settle before there's a bill. Kusama Vision is [relaunching as the Cypherpunk Vision Fund](https://forum.polkadot.network/t/19053), and we use that as the working narrative without assuming it works. [#680](https://kusama.subsquare.io/referenda/680), deciding on 25 November, would replace the three Vision bounties with that one fund under five curators. One of its four priorities is giving people reasons to use, lock and build with KSM, JAM and coretime. That is the demand this costing hasn't found yet (line F3 in [`work-breakdown.csv`](work-breakdown.csv)), so the fund's choices feed straight into the spec and the bill. Polkadot and Kusama have carried many before it: Web3, Wood and Buterin, the multi-chain case for engineers, Edgeware's hedge for ETH holders, "Expect Chaos". [`narratives.md`](narratives.md) sorts them by kind and scale, sets out what each changes in the bill and asks for your version.
 
 ## Who we are
 
@@ -80,7 +91,7 @@ Every number is an assumption until someone outside has checked it. Each input h
 ## Run it
 
 ```
-node scripts/model.mjs --ksm_price=2.87 --issuance=4 --cores=8 --team_size=2 --engineer_cost=113004 --seat_cost=3000
+node scripts/model.mjs --ksm_price=2.46 --issuance=4 --cores=8 --team_size=2 --engineer_cost=113004 --seat_cost=3000
 node scripts/model.mjs --write    # regenerates model-output.md
 ```
 
