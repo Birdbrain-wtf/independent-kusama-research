@@ -10,10 +10,10 @@ Nobody has priced the independent route, and JAM Prime's price leaves out import
 
 ## One plan, not separate threads
 
-Kusama's future has been worked on in separate places: validator pay and the size of the set, the runtime and who maintains it, the system chains and their collators, the treasury and its bounties, and the story the network tells about itself. Each has mostly been argued on its own, by different people in different threads. An independent Kusama only works if they fit, so this repo puts them in one place and in one order:
+Kusama's future has been worked on in separate places: validator pay and the size of the set, the runtime and who maintains it, the system chains and their collators, the parachains such as [Kreivo](network-shapes.md#kreivo) that build on Kusama with their own collators, the treasury and its bounties, and the story the network tells about itself. Each has mostly been argued on its own, by different people in different threads. An independent Kusama only works if they fit, so this repo puts them in one place and in one order:
 
 1. **What the network is for.** The narrative, and who funds work towards it.
-2. **What it has to run.** The spec: which chains and services, at what size.
+2. **What it has to run.** The spec: which chains and services, at what size, and what it offers the parachains already on it. JAM Prime gives every non-system parachain, Kreivo included, initial footprint and no guaranteed core, with two routes to stay whose prices nobody has set. Those chains are part of the spec, not an afterthought to it.
 3. **Who keeps it running.** Validators, collators, RPC, and the engineers who keep the runtime current.
 4. **What that costs and how it's paid.** Issuance, outside revenue, and a KSM price nobody here sets.
 
