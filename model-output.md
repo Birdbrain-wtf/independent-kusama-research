@@ -26,36 +26,36 @@ Income is issuance plus outside revenue, and all of it is treated as available f
 
 | Figure | Value | Depends on |
 | --- | --- | --- |
-| Pot | US$1.60m a year (458,250 KSM) | Issuance (lever), supply (measured), KSM price (external) |
+| Pot | US$1.14m a year (458,250 KSM) | Issuance (lever), supply (measured), KSM price (external) |
 | Seats | 96 | Cores (lever), validators per core and minimum seats (limits) |
 | Seat bill | US$3.46m a year | Seat cost (untested), seats |
 | Engineering | Not priced | Comes from the tests in [`engineering.md`](engineering.md) |
-| Left for stakers | -US$1.86m a year | All of the above |
+| Left for stakers | -US$2.32m a year | All of the above |
 | KSM price at which the pot covers this bill | US$7.54 | Everything except the price |
-| Cost of controlling a third of stake | US$9.96m | Staked (measured, would move), KSM price (external) |
+| Cost of controlling a third of stake | US$7.08m | Staked (measured, would move), KSM price (external) |
 
 ## If the price moves: nobody here can choose this column
 
 Left for stakers each year, at 32 cores and US$3,000 a seat, with nothing for engineering.
 
-| Issuance (lever) | KSM US$2.87 | KSM US$3.49 | KSM US$4.56 | KSM US$14.37 |
+| Issuance (lever) | KSM US$2.46 | KSM US$2.48 | KSM US$4.45 | KSM US$8.93 |
 | --- | --- | --- | --- | --- |
-| 2.4% | -US$2.14m | -US$1.86m | -US$1.37m | US$3.13m |
-| 4% | -US$1.26m | -US$0.79m | US$0.03m | US$7.52m |
-| 6.98% | US$0.37m | US$1.20m | US$2.62m | US$15.70m |
+| 2.4% | -US$2.33m | -US$2.32m | -US$1.42m | US$0.64m |
+| 4% | -US$1.58m | -US$1.56m | -US$0.06m | US$3.36m |
+| 6.98% | -US$0.18m | -US$0.15m | US$2.47m | US$8.45m |
 
-US$2.87 and US$14.37 are the 12-month low and high to 5 November 2026, US$4.56 the 12-month median and US$3.49 the price at the 4 November chain read.
+US$2.46 and US$8.93 are the 12-month low and high to 25 November 2026, US$4.45 the 12-month median and US$2.48 the price on 25 November.
 
 ## If the seat cost moves: other people's figures
 
 At 2.4% issuance, with nothing for engineering. US$2,000 is the metanode rate in a design proposal for Polkadot, for its own load, and US$3,000 is the JAM Prime proposal paper's benchmark. Neither has been tested for Kusama.
 
-| Seat cost a month | Cores (seats) | Bill a year | KSM price where the pot covers it | Issuance needed at US$3.49 | Seats the pot pays for, no stakers |
+| Seat cost a month | Cores (seats) | Bill a year | KSM price where the pot covers it | Issuance needed at US$2.48 | Seats the pot pays for, no stakers |
 | --- | --- | --- | --- | --- | --- |
-| US$2,000 | 8 (30) | US$0.72m | US$1.57 | 1.08% | 66 |
-| US$2,000 | 32 (96) | US$2.30m | US$5.03 | 3.46% | 66 |
-| US$3,000 | 8 (30) | US$1.08m | US$2.36 | 1.62% | 44 |
-| US$3,000 | 32 (96) | US$3.46m | US$7.54 | 5.19% | 44 |
+| US$2,000 | 8 (30) | US$0.72m | US$1.57 | 1.52% | 47 |
+| US$2,000 | 32 (96) | US$2.30m | US$5.03 | 4.87% | 47 |
+| US$3,000 | 8 (30) | US$1.08m | US$2.36 | 2.28% | 31 |
+| US$3,000 | 32 (96) | US$3.46m | US$7.54 | 7.30% | 31 |
 
 ## If one operator runs several seats: our split, not a finding
 
@@ -87,13 +87,13 @@ Stated by other people for their own scope. None has been tested on Kusama, and 
 | System-chain collators | About US$24,376 a month | [Polkadot Ref 1832](https://polkadot.subsquare.io/referenda/1832) | A six-month request for Polkadot's five system chains, about US$0.29m a year. Not in the totals |
 | Public RPC | Almost US$300,000 in January 2026 | [A forum post on Polkadot's IBP bounty](https://forum.polkadot.network/t/17422) | Polkadot's scale, disputed there and unchecked by us. Not in the totals |
 | Legal body | US$600,000 for set-up and a first year | [Polkadot Community Foundation request, 2023](https://polkadot.polkassembly.io/post/2278) | Minimal scope, Cayman structure. Not in the totals |
-| What a Kusama seat earns today | US$554 a month in staking pay. Commission to the operator: US$161 mean, US$115 median, US$105 median leaving out the 61 seats at 100% | [Our chain read](data/kusama-2026-11-04.json) and [commission spread](data/kusama-commission-spread-2026-11-04.json), 4 November 2026, at US$3.49 | Earnings and not costs, and Kusama pay only, but 700 seats run on it |
+| What a Kusama seat earns today | US$554 a month in staking pay. Commission to the operator: US$161 mean, US$115 median, US$105 median leaving out the 61 seats at 100% | [Our chain read](data/kusama-2026-11-04.json) and [commission spread](data/kusama-commission-spread-2026-11-04.json), 4 November 2026, at that day's US$3.49 | Earnings and not costs, and Kusama pay only, but 700 seats run on it |
 
 ## Engineering: stated budgets, not a team
 
-Scale markers only, from other scopes, at 2.4% issuance, US$3.49 a KSM, 32 cores and US$3,000 a seat. Each row names the job it pays for. Neither is a proposal for Kusama or an assumption that Kusama keeps that team or tool. See `engineering.md`.
+Scale markers only, from other scopes, at 2.4% issuance, US$2.48 a KSM, 32 cores and US$3,000 a seat. Each row names the job it pays for. Neither is a proposal for Kusama or an assumption that Kusama keeps that team or tool. See `engineering.md`.
 
 | Job added to the seat bill | Budget a year | Total bill | Left for stakers | KSM price where the pot covers it |
 | --- | --- | --- | --- | --- |
-| Keeping Polkadot connected to Ethereum and its L2s: [Snowbridge, Ref 1881](https://polkadot.subsquare.io/referenda/1881), 2 people and a part-time reviewer, the whole request | US$0.36m | US$3.82m | -US$2.22m | US$8.34 |
-| Shared protocol work with Parity: [Gossamer, Ref 1699](https://polkadot.subsquare.io/referenda/1699), 9 people | US$1.63m | US$5.09m | -US$3.49m | US$11.10 |
+| Keeping Polkadot connected to Ethereum and its L2s: [Snowbridge, Ref 1881](https://polkadot.subsquare.io/referenda/1881), 2 people and a part-time reviewer, the whole request | US$0.36m | US$3.82m | -US$2.68m | US$8.34 |
+| Shared protocol work with Parity: [Gossamer, Ref 1699](https://polkadot.subsquare.io/referenda/1699), 9 people | US$1.63m | US$5.09m | -US$3.95m | US$11.10 |

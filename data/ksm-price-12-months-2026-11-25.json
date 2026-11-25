@@ -1,0 +1,11 @@
+{
+  "source": "CoinGecko daily closes, https://api.coingecko.com/api/v3/coins/kusama/market_chart?vs_currency=usd&days=365&interval=daily",
+  "read": "2026-11-25",
+  "from": "2025-11-26",
+  "to": "2026-11-25",
+  "points": 366,
+  "low": 2.46,
+  "median": 4.45,
+  "high": 8.93,
+  "latest": 2.48
+}

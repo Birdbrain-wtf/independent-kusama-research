@@ -63,7 +63,7 @@ const args = Object.fromEntries(process.argv.slice(2).filter((a) => a.includes('
 }));
 
 function report() {
-  const prices = [num('ksm_price', 'low'), num('ksm_price'), 4.56, num('ksm_price', 'high')];
+  const prices = [num('ksm_price', 'low'), num('ksm_price'), 4.45, num('ksm_price', 'high')];
   const issuances = [2.4, 4, num('issuance', 'high')];
   const seatCosts = [num('seat_cost', 'low'), num('seat_cost')];
   const usd = (v) => `US$${v.toLocaleString('en-GB')}`;
@@ -89,10 +89,10 @@ function report() {
   out.push(`Left for stakers each year, at 32 cores and ${baseSeat} a seat, with nothing for engineering.`, '');
   out.push(`| Issuance (lever) | ${prices.map((x) => `KSM ${p(x)}`).join(' | ')} |`, `| --- | ${prices.map(() => '---').join(' | ')} |`);
   for (const iss of issuances) out.push(`| ${iss}% | ${prices.map((x) => m(run({ ksm_price: x, issuance: iss }).left)).join(' | ')} |`);
-  out.push('', 'US$2.87 and US$14.37 are the 12-month low and high to 5 November 2026, US$4.56 the 12-month median and US$3.49 the price at the 4 November chain read.', '');
+  out.push('', `${p(num('ksm_price', 'low'))} and ${p(num('ksm_price', 'high'))} are the 12-month low and high to 25 November 2026, US$4.45 the 12-month median and ${p(num('ksm_price'))} the price on 25 November.`, '');
   out.push('## If the seat cost moves: other people\'s figures', '');
   out.push('At 2.4% issuance, with nothing for engineering. US$2,000 is the metanode rate in a design proposal for Polkadot, for its own load, and US$3,000 is the JAM Prime proposal paper\'s benchmark. Neither has been tested for Kusama.', '');
-  out.push('| Seat cost a month | Cores (seats) | Bill a year | KSM price where the pot covers it | Issuance needed at US$3.49 | Seats the pot pays for, no stakers |', '| --- | --- | --- | --- | --- | --- |');
+  out.push(`| Seat cost a month | Cores (seats) | Bill a year | KSM price where the pot covers it | Issuance needed at ${p(num('ksm_price'))} | Seats the pot pays for, no stakers |`, '| --- | --- | --- | --- | --- | --- |');
   for (const sc of seatCosts) for (const c of [8, 32]) {
     const r = run({ seat_cost: sc, cores: c });
     out.push(`| US$${sc.toLocaleString('en-GB')} | ${c} (${r.seats}) | ${m(r.bill)} | ${p(r.breakEvenPrice)} | ${pct(r.issuanceNeeded)} | ${Math.floor(r.seatsPotPays)} |`);
@@ -114,9 +114,9 @@ function report() {
   out.push(`| System-chain collators | About US$24,376 a month | [Polkadot Ref 1832](https://polkadot.subsquare.io/referenda/1832) | A six-month request for Polkadot's five system chains, about ${m(24376 * 12)} a year. Not in the totals |`);
   out.push(`| Public RPC | Almost US$300,000 in January 2026 | [A forum post on Polkadot's IBP bounty](https://forum.polkadot.network/t/17422) | Polkadot's scale, disputed there and unchecked by us. Not in the totals |`);
   out.push(`| Legal body | US$600,000 for set-up and a first year | [Polkadot Community Foundation request, 2023](https://polkadot.polkassembly.io/post/2278) | Minimal scope, Cayman structure. Not in the totals |`);
-  out.push(`| What a Kusama seat earns today | US$554 a month in staking pay. Commission to the operator: US$161 mean, US$115 median, US$105 median leaving out the 61 seats at 100% | [Our chain read](data/kusama-2026-11-04.json) and [commission spread](data/kusama-commission-spread-2026-11-04.json), 4 November 2026, at US$3.49 | Earnings and not costs, and Kusama pay only, but 700 seats run on it |`);
+  out.push(`| What a Kusama seat earns today | US$554 a month in staking pay. Commission to the operator: US$161 mean, US$115 median, US$105 median leaving out the 61 seats at 100% | [Our chain read](data/kusama-2026-11-04.json) and [commission spread](data/kusama-commission-spread-2026-11-04.json), 4 November 2026, at that day's US$3.49 | Earnings and not costs, and Kusama pay only, but 700 seats run on it |`);
   out.push('', '## Engineering: stated budgets, not a team', '');
-  out.push(`Scale markers only, from other scopes, at 2.4% issuance, US$3.49 a KSM, 32 cores and ${baseSeat} a seat. Each row names the job it pays for. Neither is a proposal for Kusama or an assumption that Kusama keeps that team or tool. See \`engineering.md\`.`, '');
+  out.push(`Scale markers only, from other scopes, at 2.4% issuance, ${p(num('ksm_price'))} a KSM, 32 cores and ${baseSeat} a seat. Each row names the job it pays for. Neither is a proposal for Kusama or an assumption that Kusama keeps that team or tool. See \`engineering.md\`.`, '');
   out.push('| Job added to the seat bill | Budget a year | Total bill | Left for stakers | KSM price where the pot covers it |', '| --- | --- | --- | --- | --- |');
   for (const [name, cost] of [['Keeping Polkadot connected to Ethereum and its L2s: [Snowbridge, Ref 1881](https://polkadot.subsquare.io/referenda/1881), 2 people and a part-time reviewer, the whole request', 364200], ['Shared protocol work with Parity: [Gossamer, Ref 1699](https://polkadot.subsquare.io/referenda/1699), 9 people', 1630716]]) {
     const r = run({ team_size: 1, engineer_cost: cost });
