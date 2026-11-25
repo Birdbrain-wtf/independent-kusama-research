@@ -17,7 +17,9 @@ Kusama's future has been worked on in separate places: validator pay and the siz
 3. **Who keeps it running.** Validators, collators, RPC, and the engineers who keep the runtime current.
 4. **What that costs and how it's paid.** Issuance, outside revenue, and a KSM price nobody here sets.
 
-A change at one step moves every step after it. A fund that backs projects needing coretime changes the spec, a smaller spec changes the engineering bill, and the bill sets how much issuance is needed. JAM Prime has the same links: its payment comes from the Kusama Vision fund, so what Kusama funds and how it pays for capacity are decided from one place there too.
+A change at one step moves every step after it. A fund that backs projects needing coretime changes the spec, a smaller spec changes the engineering bill, and the bill sets how much issuance is needed. JAM Prime has the same links: its payment would come from the 10,000,000 DOT the Web3 Foundation committed to Kusama under [referendum 498](https://kusama.subsquare.io/referenda/498), and most of that is not yet in any Kusama pot.
+
+Both routes are paid partly in DOT and spent in dollars. [Birdbrain's runway planner](https://birdbrain.wtf/tools/runway) reads what is in the Vision pots today, including the Art and ZK balances #680 would move into the Cypherpunk fund, and shows how long a dollar budget lasts against DOT's real price history and the DOT price a plan needs.
 
 ## The narrative
 
