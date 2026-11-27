@@ -7,7 +7,7 @@ Birdbrain runs this survey. Birdbrain also proposed [#676](https://kusama.subsqu
 
 Use what you actually spent over the last three months, in US dollars, for one Kusama seat. If you run several seats, give the average a seat, and put costs the whole operation carries however many seats it runs in question 12. An unpaid hour counts too, so tell us the hours.
 
-The cost lines match [Appendix B of the JAM Prime proposal paper](https://github.com/sdfinst/publications/blob/a445bba7ab5a801e3b85168551dfa8b1e5021bc2/content/articles/proposal-kusama-future-jam-prime/index.md), so the answers can sit directly beside its US$3,000. The references today are that US$3,000 and the US$2,000 in [a design proposal for Polkadot](https://forum.polkadot.network/t/19231) for a [metanode](https://docs.polkadot.com/node-infrastructure/run-a-metanode/). Neither has been tested on Kusama.
+The cost lines match [Appendix B of the JAM Prime proposal paper](https://github.com/sdfinst/publications/blob/a445bba7ab5a801e3b85168551dfa8b1e5021bc2/content/articles/proposal-kusama-future-jam-prime/index.md), so the answers can sit directly beside its US$3,000. The references today are that US$3,000 and the US$2,000 in [a design proposal for Polkadot](https://forum.polkadot.network/t/19231) for a [metanode](https://developers.polkadot.com/node-infrastructure/run-a-metanode/). Neither has been tested on Kusama.
 
 ## About your operation
 1. How many Kusama seats do you run? 1, 2-5, 6-20, more than 20

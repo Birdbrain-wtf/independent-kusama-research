@@ -1,0 +1,38 @@
+{
+  "read": "2026-11-27",
+  "status": "Desk estimate. Polkadot's published metanode spec priced against Hetzner list prices. No operator has tested it. Hardware and bandwidth only: no labour, no RPC or light-client load figures.",
+  "spec_source": "https://developers.polkadot.com/node-infrastructure/run-a-metanode/",
+  "spec_page_updated": "2026-10-29, marked under construction",
+  "duty": "Validate, collate Asset Hub and People, serve relay chain, Asset Hub and People RPC and smoldot light clients over WebRTC",
+  "spec": {
+    "validator": { "cpu": "8 physical cores at 3.4 GHz, SMT off", "memory_gb": 32, "storage": "2 TB+ NVMe", "network": "500 Mbit/s symmetric" },
+    "collator_each": { "cpu": "4+ cores (8+ optimal)", "memory_gb": "32 (64 optimal)", "storage": "200+ GB NVMe, pruned, relay data read from the validator via --relay-chain-rpc-urls", "network": "500+ Mbit/s" },
+    "single_machine": { "cpu": "16 physical cores at 3.4 GHz (24 optimal)", "memory_gb": "64 (128 optimal)", "storage": "2.4 TB+ NVMe", "network": "1 Gbit/s symmetric" }
+  },
+  "prices": {
+    "source": "hetzner.com list prices, Falkenstein, excluding VAT, read 2026-11-27",
+    "fx": "GBP 1 = USD 1.35 = EUR 1.20",
+    "AX102": { "hardware": "Ryzen 9 7950X3D 16 cores, 128 GB DDR5 ECC, 2 x 1.92 TB NVMe, 1 Gbit/s", "eur_month": 259, "eur_setup": 129, "url": "https://www.hetzner.com/dedicated-rootserver/ax102/" },
+    "AX42": { "hardware": "Ryzen 7 PRO 8700GE 8 cores, 64 GB DDR5 ECC, 2 x 512 GB NVMe, 1 Gbit/s", "eur_month": 99, "eur_setup": 49, "url": "https://www.hetzner.com/dedicated-rootserver/ax42/" }
+  },
+  "options": [
+    { "id": 1, "name": "Polkadot's duty on one machine", "machines": "AX102", "eur_month": 259, "usd_month": 291, "usd_year_96_seats": 340000, "usd_year_300_seats": 1050000 },
+    { "id": 2, "name": "Same duty, both collators on one separate box", "machines": "AX102 + AX42", "eur_month": 358, "usd_month": 403, "usd_year_96_seats": 460000, "usd_year_300_seats": 1450000 },
+    { "id": 3, "name": "Same duty, one box per service as the page splits it", "machines": "AX102 + 2 AX42", "eur_month": 457, "usd_month": 514, "usd_year_96_seats": 590000, "usd_year_300_seats": 1850000 },
+    { "id": 4, "name": "All five Kusama system chains", "machines": "AX102 + 3 AX42, two collators a box at most", "eur_month": 556, "usd_month": 626, "usd_year_96_seats": 720000, "usd_year_300_seats": 2250000 }
+  ],
+  "assumptions": [
+    "Option 1 meets the minimum single-machine spec, not the optimal 24 cores. 2.4 TB means striping the two drives with no mirror, or larger drives at a price not read.",
+    "Option 2 puts two collators on one 8-core, 64 GB box, which fits the minimum exactly and leaves nothing spare.",
+    "Option 4 gives Bridge Hub, Coretime and Encointer the Asset Hub spec. The page prices none of them, and Bridge Hub's relaying may need more.",
+    "Every seat is costed as if it collates. Kusama had 54 collator slots on 2026-11-04, 25 on Asset Hub and People (collator-slots-2026-11-04.json), so the collator part is an upper bound.",
+    "96 seats is the shape in Kusama referendum 573. 300 is where Ref 681 stops.",
+    "The minimum spec is assumed to survive real RPC and light-client load. Nobody has shown that."
+  ],
+  "open": [
+    "What RPC and light-client traffic does a Kusama metanode serve?",
+    "Do Bridge Hub, Coretime and Encointer collators fit the Asset Hub spec?",
+    "How many seats need to collate, and who decides which?",
+    "Does the host accept validators in writing?"
+  ]
+}

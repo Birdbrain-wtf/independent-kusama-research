@@ -27,7 +27,7 @@ Set reductions and chain merges answer the same question at different layers. A 
 | Shape | What runs | Who runs it | Day-one size |
 | --- | --- | --- | --- |
 | **A. Carry everything** | Five system chains as they are: Asset Hub, Bridge Hub, People, Coretime, Encointer | Validators, plus separately funded collators and RPC | Costed at 8 and 32 cores |
-| **B. Metanode** | Five system chains as they are | Validators also collate and serve | Costed at 8 and 32 cores |
+| **B. Metanode** | Five system chains as they are | Validators also collate and serve | Costed at 8 and 32 cores. Hardware a seat estimated at US$291-626 a month ([M12](assumptions.csv)) |
 | **C. Consolidate, then scale** | Signposted, not designed: consolidate infrastructure to fit demand and/or utility, then scale up and out | Open | Follows demand and/or utility |
 | **Reference: JAM Prime** | Five chains at 8 cores. "Reduced or consolidated" below 7. Other parachains, Kreivo included, get initial footprint and no guaranteed cores | Polkadot's validators. Collators not stated | 8 cores |
 
